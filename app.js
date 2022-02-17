@@ -9,9 +9,7 @@ const { NotFoundError, BadRequestError } = require("./expressError");
 const itemRoutes = require("./itemRoutes");
 app.use(express.json());
 
-
 app.use("/items", itemRoutes);
-
 
 
 /** 404 handler: matches unmatched routes; raises NotFoundError. */
