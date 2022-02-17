@@ -42,7 +42,7 @@ router.patch("/:name", function (req, res){
 
 //DELETE delets a single specific item from shopping items
 router.delete("/:name", function (req, res){
-
+    debugger;
   for (let i = 0; i < db.items.length; i++){
     if (req.params.name === db.items[i].name){
       db.items.splice(i, 1);
